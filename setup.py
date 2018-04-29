@@ -15,18 +15,10 @@ from os import path
 
 here = path.abspath(path.dirname(__file__))
 
-# Get the long description from the README file
-#import pypandoc
-#long_description = pypandoc.convert('README.md', 'rst')
-#long_description = open('README.md').read()
 long_description = 'this is a simple Python project, and this is a long description'
 
 setup(
     name='banana_octo_py',
-
-    # Versions should comply with PEP440.  For a discussion on single-sourcing
-    # the version across setup.py and the project code, see
-    # https://packaging.python.org/en/latest/single_source_version.html
     version='1.0',
 
     description='a simple Python project',
@@ -50,10 +42,14 @@ setup(
     # Alternatively, if you want to distribute just a my_module.py, uncomment
     # this:
     #   py_modules=["my_module"],
+    #
+    packages=find_packages(exclude=['contrib', 'docs', 'tests']),  # Required
 
-    # List run-time dependencies here.  These will be installed by pip when
-    # your project is installed. For an analysis of "install_requires" vs pip's
-    # requirements files see:
+    # This field lists other packages that your project depends on to run.
+    # Any package you put here will be installed by pip when your project is
+    # installed, so they must be valid existing projects.
+    #
+    # For an analysis of "install_requires" vs pip's requirements files see:
     # https://packaging.python.org/en/latest/requirements.html
     install_requires=['numpy'],
 

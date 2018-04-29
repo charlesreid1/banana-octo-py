@@ -76,4 +76,18 @@ This will run all tests in the `tests/` directory.
 
 ## continuous integration (CI) with travis
 
-The `.travis.yml` file runs the Travis tests by using the [tox test automation library](https://tox.readthedocs.io/en/latest/). tox sets up and configures tests for different python versions/compilations/system configurations on Travis.
+The `.travis.yml` file runs the Travis tests by using the 
+[tox test automation library](https://tox.readthedocs.io/en/latest/). 
+tox sets up and configures tests for different python v
+ersions/compilations/system configurations on Travis.
+
+
+## links
+
+* [Python Packaging User Guide][packaging guide]
+* [Tutorial on Packaging and Distributing Projects][distribution tutorial].
+* [Python packging guide sample package][src].
+
+[packaging guide]: https://packaging.python.org
+[distribution tutorial]: https://packaging.python.org/en/latest/distributing.html
+[src]: https://github.com/pypa/sampleproject
